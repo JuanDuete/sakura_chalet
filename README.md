@@ -1,1 +1,1 @@
-# sakura_chalet
+# sakura-chalet
