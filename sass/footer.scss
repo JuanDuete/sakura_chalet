@@ -1,0 +1,63 @@
+footer {
+    grid-area: footer;
+    background-color:#d3c2b1;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+
+.newsletter {
+    &__text {
+        color: white;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        width: 18%;
+        margin: 0.2rem;
+        padding: 0.2rem;
+        border: 1px solid #ccc;
+        border-radius: 0.2rem;
+    
+    }
+
+    &__btn {
+        padding: 0.2rem;
+        color: white;
+        background-color: black;
+        border: 1px solid black ;
+        border-radius: 0.2rem;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    
+    }
+
+}
+
+.redes {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+    &__icon li {
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+}
+
+.copy {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+    
+    p {
+        font-size: 1rem;
+        color: white;
+    }
+
+}

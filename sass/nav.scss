@@ -1,0 +1,22 @@
+header {
+    grid-area: header;
+    
+}
+
+.bg-brown {
+    background-color: $color-principal;
+}
+
+.link__nav {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+
+}
+    
+.link__nav:hover {
+    color: black;
+    transition: color 1s ;
+
+}
