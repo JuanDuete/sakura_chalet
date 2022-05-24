@@ -20,6 +20,30 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+header {
+    grid-area: header;
+    
+}
+
+.bg-brown {
+    background-color: $color-principal;
+}
+
+.link-nav {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+
+}
+    
+.link-nav:hover {
+    color: black;
+    transition: color 1s ;
+
+}
+
+
 main {
     grid-area: main;
     display: flex;

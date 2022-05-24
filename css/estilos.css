@@ -71,6 +71,22 @@ body {
   min-height: 100vh;
   grid-template-rows: auto 1fr auto; }
 
+header {
+  grid-area: header; }
+
+.bg-brown {
+  background-color: #d3c2b1; }
+
+.link-nav {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase; }
+
+.link-nav:hover {
+  color: black;
+  transition: color 1s; }
+
 main {
   grid-area: main;
   display: flex;
