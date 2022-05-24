@@ -4,13 +4,13 @@ header {
 .bg-brown {
   background-color: #d3c2b1; }
 
-.link__nav {
+.link-nav {
   color: white;
   text-decoration: none;
   margin-right: 2rem;
   text-transform: uppercase; }
 
-.link__nav:hover {
+.link-nav:hover {
   color: black;
   transition: color 1s; }
 
@@ -325,7 +325,7 @@ h1 {
     margin: 16px; }
   .portada h1 {
     font-size: 4rem; }
-  .info__fotoContainer {
+  git status .info__fotoContainer {
     display: flex;
     flex-direction: column;
     align-items: center; }
