@@ -10,14 +10,10 @@
 }
 
 body {
-    display: grid;
-    grid-template-areas: "header header header header"
-                            "main main main main"
-                            "footer footer footer footer";
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    
 }
 
 header {
@@ -56,6 +52,7 @@ h1 {
     justify-content: center;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 3rem;
 }
 
 .portada {
@@ -137,13 +134,13 @@ h1 {
     h2 {
         display: flex;
         justify-content: center;
-        font-size:2rem;
+        font-size: 2rem;
     }
     
     p {
         text-align: start;
         margin: 0;
-        padding:  2rem;
+        padding: 2rem;
     }
 
     a {
@@ -167,21 +164,7 @@ h1 {
 
 }
 
-.info {
-    &__articulo {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 2rem;
-    }
 
-    &__fotoContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-}
 
 
 .fechas {
@@ -220,6 +203,13 @@ h1 {
         padding: 0;
     }
 
+    &__mayo li:hover {
+        background-color: $color-secundario;
+        transition: background-color, color .1s;
+        color:$color-terciario;
+        cursor:pointer;
+    }
+
     &__firstDayMayo {
         grid-column-start: 7;
     }
@@ -229,6 +219,13 @@ h1 {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         padding: 0;
+    }
+
+    &__junio li:hover {
+        background-color: $color-secundario;
+        transition: background-color, color .1s;
+        color:$color-terciario;
+        cursor:pointer;
     }
 
     &__firstDayJunio {
@@ -242,6 +239,14 @@ h1 {
         padding: 0;
     }
 
+    &__julio li:hover {
+        background-color: $color-secundario;
+        transition: background-color, color .1s;
+        color:$color-terciario;
+        cursor:pointer;
+    
+    }
+
     &__firstDayJulio {
         grid-column-start: 5;
     }
@@ -253,16 +258,64 @@ h1 {
 
 }
 
+.info h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.info__foto {
+    width: 20rem;
+    height: 25rem;
+
+}
+
+.info__fotoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.iframe__container1 {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    &__container iframe {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.iframe__container2 {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    &__container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 .pfrecuentes {
 
-    &__h3 {
-        display: flex;
+    &__h2 {
+    display: flex;
     justify-content: center;
-    width: 40rem;
+    font-size: 2rem;
+    width: auto;
+    max-width: fit-content;
     margin: 2rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.3rem;
     border: solid 1px #ccc;
     background-color: #d3c2b1;
     box-shadow: $box_sombra;
@@ -277,52 +330,6 @@ h1 {
     }
 
 }
-
-.info {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin: auto;
-    margin-top: 3rem;
-    max-width: 50rem;
-   
-    h2 {
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-        
-    }
-    
-    &__foto {
-        width: 260px;
-        height: 400px;
-    }
-    
-    
-}
-
-.iframe {
-    &__video {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-weight: bold;   
-    }
-    
-
-    &__mapa{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3rem;
-        flex-wrap: wrap;
-    }
-}
-
 
 
 .backgroundCto {
@@ -351,6 +358,7 @@ h1 {
         border: solid 1px #ccc;
         background-color: #d3c2b1;
         box-shadow: $box_sombra;
+        
         
     }
     
@@ -389,25 +397,40 @@ h1 {
 @media (min-width:320px) and (max-width:720px) {
     body {
         margin: 16px;
+        
     }
+
 
     .portada {
     
         h1 {
-        font-size: 4rem;
-         
+        font-size: 3rem;
         }
+    
+        &__btn {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-family: $font-1;
+            font-size: 1rem;
+            background-color: $color-principal;
+            color: $color-terciario;
+            padding: 1rem;
+            margin: 1rem;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: $box_sombra;
+        }
+    
+    
     }
-git status    .info__fotoContainer {
+    .info__fotoContainer {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
     
-    .info__foto {
-        width: 300px;
-        height: 400px;
-    }
+    
 
 }
 
