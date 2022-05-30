@@ -2,12 +2,13 @@ footer {
   background-color: #d3c2b1;
   padding: 0.5rem;
   text-align: center;
-  margin-top: 3rem; }
+  margin-top: auto; }
 
 .newsletter__text {
   color: white;
   align-items: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 1.5rem; }
 
 .newsletter__input {
   width: 18%;
@@ -315,7 +316,7 @@ iframe {
   background-size: cover;
   background-position-y: -12rem; }
   .backgroundCto h1 {
-    color: #fff;
+    color: white;
     font-weight: bold;
     margin-top: 3rem; }
 
@@ -333,7 +334,7 @@ iframe {
 
 .contacto__input {
   width: 100%;
-  padding: 1rem;
+  padding: .8rem;
   margin: 1rem 0;
   display: inline-block;
   border: 1px solid #ccc;

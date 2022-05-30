@@ -361,7 +361,7 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
     background-position-y:-12rem;
 
     h1 {
-        color: #fff;
+        color: $color-terciario;
         font-weight: bold;
         margin-top: 3rem;
     }
@@ -386,7 +386,7 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
     
     &__input {
         width: 100%;
-        padding: 1rem;
+        padding: .8rem;
         margin: 1rem 0;
         display: inline-block;
         border: 1px solid #ccc;
@@ -424,9 +424,9 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
 
     .portada {
     
-    h1 {
+        h1 {
         font-size: 3rem;
-    }
+        }
     
         &__btn {
             display: flex;
