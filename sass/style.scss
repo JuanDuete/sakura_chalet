@@ -39,7 +39,9 @@ header {
 
 }
 
-
+.container {
+    margin-bottom: 3rem;
+}
 main {
     grid-area: main;
     display: flex;
@@ -122,9 +124,9 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 1rem;
+        padding: .5rem;
         background-color: $color-principal;
-        max-width: 45rem;
+        max-width: 40rem;
         color: $color-terciario;
         border: none;
         border-radius: 1rem;
@@ -134,15 +136,21 @@ h1 {
     h2 {
         display: flex;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     p {
         text-align: start;
         margin: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
 
+    &__btn {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
     a {
         display: flex;
         justify-content: center;
@@ -164,9 +172,6 @@ h1 {
 
 }
 
-
-
-
 .fechas {
     background-image: url(../recursos/sakura__atadecer.jpeg);
     background-repeat: no-repeat;
@@ -174,8 +179,6 @@ h1 {
     background-position-y:-200px ;
 
 }
-
-
 
 .calendario {
     width: 90%;
@@ -257,52 +260,71 @@ h1 {
     }
 
 }
+.info{
+ 
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
 
-.info h2 {
+    &__foto {
+        width: 20rem;
+        height: 25rem;
+
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+   
+    }
+
+    &__container p {
+        display: flex;
+        text-align: center;
+        width: 80rem;
+    }
+
+    &__fotoContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+.pictureC {
     display: flex;
+    gap: 2rem;
     justify-content: center;
 }
 
-.info__foto {
-    width: 20rem;
-    height: 25rem;
+$fotos: (key1: balcon, key2: pileta, key3: terraza);
 
-}
-
-.info__fotoContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.iframe__container1 {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-
-    &__container iframe {
-        position: absolute;
-        
-        width: 100%;
-        height: 100%;
+@each $key, $sakura in $fotos{
+    .#{$key}-picture {
+        background-image: url('../recursos/fotosS/#{$sakura}.jpeg');
+        background-size: cover;
+        width: 20rem;
+        height: 30rem;
+        background-color: $color-secundario;
+    
     }
 }
 
-.iframe__container2 {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
 
-    &__container iframe {
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
+
+.info__ifr {
+        display: flex;
+        justify-content: center;
+}    
+    
+ iframe {
+        width: 50rem;
+        height: 25rem;
+        margin-bottom: 3rem;
+} 
 
 
 .pfrecuentes {
@@ -400,12 +422,11 @@ h1 {
         
     }
 
-
     .portada {
     
-        h1 {
+    h1 {
         font-size: 3rem;
-        }
+    }
     
         &__btn {
             display: flex;
@@ -422,15 +443,16 @@ h1 {
             box-shadow: $box_sombra;
         }
     
-    
     }
-    .info__fotoContainer {
+    .pictureC {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
     
-    
+    iframe {
+        width: 30rem;
+        height: 20rem;
+    } 
 
 }
 

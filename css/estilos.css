@@ -2,7 +2,7 @@ footer {
   background-color: #d3c2b1;
   padding: 0.5rem;
   text-align: center;
-  margin-top: auto; }
+  margin-top: 3rem; }
 
 .newsletter__text {
   color: white;
@@ -67,6 +67,9 @@ header {
 .link-nav:hover {
   color: black;
   transition: color 1s; }
+
+.container {
+  margin-bottom: 3rem; }
 
 main {
   grid-area: main;
@@ -133,9 +136,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: .5rem;
     background-color: #d3c2b1;
-    max-width: 45rem;
+    max-width: 40rem;
     color: white;
     border: none;
     border-radius: 1rem;
@@ -143,11 +146,14 @@ h1 {
   .masInfo h2 {
     display: flex;
     justify-content: center;
-    font-size: 2rem; }
+    font-size: 3rem; }
   .masInfo p {
     text-align: start;
     margin: 0;
-    padding: 2rem; }
+    padding: 1rem; }
+  .masInfo__btn {
+    display: flex;
+    justify-content: center; }
   .masInfo a {
     display: flex;
     justify-content: center;
@@ -228,38 +234,61 @@ h1 {
 
 .info h2 {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 2rem; }
 
 .info__foto {
   width: 20rem;
   height: 25rem; }
+
+.info__container {
+  display: flex;
+  justify-content: center; }
+
+.info__container p {
+  display: flex;
+  text-align: center;
+  width: 80rem; }
 
 .info__fotoContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
 
-.iframe__container1 {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden; }
-  .iframe__container1__container iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%; }
+.pictureC {
+  display: flex;
+  gap: 2rem;
+  justify-content: center; }
 
-.iframe__container2 {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden; }
-  .iframe__container2__container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+.key1-picture {
+  background-image: url("../recursos/fotosS/balcon.jpeg");
+  background-size: cover;
+  width: 20rem;
+  height: 30rem;
+  background-color: black; }
+
+.key2-picture {
+  background-image: url("../recursos/fotosS/pileta.jpeg");
+  background-size: cover;
+  width: 20rem;
+  height: 30rem;
+  background-color: black; }
+
+.key3-picture {
+  background-image: url("../recursos/fotosS/terraza.jpeg");
+  background-size: cover;
+  width: 20rem;
+  height: 30rem;
+  background-color: black; }
+
+.info__ifr {
+  display: flex;
+  justify-content: center; }
+
+iframe {
+  width: 50rem;
+  height: 25rem;
+  margin-bottom: 3rem; }
 
 .pfrecuentes__h2 {
   display: flex;
@@ -346,7 +375,9 @@ h1 {
     border: none;
     border-radius: 1rem;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
-  .info__fotoContainer {
+  .pictureC {
     display: flex;
-    flex-direction: column;
-    justify-content: center; } }
+    flex-direction: column; }
+  iframe {
+    width: 30rem;
+    height: 20rem; } }
