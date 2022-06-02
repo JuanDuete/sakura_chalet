@@ -347,7 +347,7 @@ iframe {
   cursor: pointer;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
 
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 800px) {
   body {
     margin: 16px; }
   .portada h1 {
@@ -365,9 +365,13 @@ iframe {
     border: none;
     border-radius: 1rem;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+  .h1Fechas {
+    color: white; }
   .pictureC {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   iframe {
     width: 30rem;
     height: 20rem; } }

@@ -410,7 +410,7 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
 }
 
 
-@media (min-width:320px) and (max-width:720px) {
+@media (min-width:320px) and (max-width:800px) {
     body {
         margin: 16px;
         
@@ -438,11 +438,18 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
         }
     
     }
+
+    .h1Fechas {
+        color: $color-terciario;
+    }
+    
     .pictureC {
         display: flex;
         flex-direction: column;
-    }
-    
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }   
+
     iframe {
         width: 30rem;
         height: 20rem;
