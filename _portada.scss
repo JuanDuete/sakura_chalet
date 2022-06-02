@@ -1,0 +1,53 @@
+.portada {
+    font-family: $font-1;
+    background: $color-terciario;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__boxbtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-family: $font-1;
+        font-size: 3rem;
+        background-color: $color-principal;
+        color: $color-terciario;
+        padding: 1rem;
+        margin: 2rem;
+        border: none;
+        border-radius: 1rem;
+        box-shadow: $box_sombra;
+    }
+
+    h1 {
+        color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 10rem;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+     
+        background-image: url(../recursos/sakura__atadecer.jpeg);
+        background-size: cover;
+        background-position-y: 41rem;
+         
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+     }
+
+     &__btn:hover {
+        background-color: $color-secundario;
+        transition: background-color 1.2s;
+        transform: scale(1.1);
+        transition: transform 1.2s;
+        color: $color-terciario;
+     }
+
+}

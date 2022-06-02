@@ -1,0 +1,83 @@
+.fechas {
+    background-image: url(../recursos/sakura__atadecer.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:-200px ;
+
+}
+
+.calendario {
+    width: 90%;
+    margin: auto;
+    max-width: 80rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    align-self: center;
+    margin-top: 2rem;
+
+    &__box {
+        background-color: $color-principal;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    
+    &__mayo {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 0;
+    }
+
+    &__mayo li:hover {
+        background-color: $color-secundario;
+        transition: background-color, color .1s;
+        color:$color-terciario;
+        cursor:pointer;
+    }
+
+    &__firstDayMayo {
+        grid-column-start: 7;
+    }
+
+    &__junio {
+        @extend .calendario__mayo;
+        
+    }
+
+    &__junio li:hover {
+        background-color: $color-secundario;
+        transition: background-color, color .1s;
+        color:$color-terciario;
+        cursor:pointer;
+    }
+
+    &__firstDayJunio {
+        grid-column-start: 3;
+    }
+
+    &__julio {
+        @extend .calendario__mayo;
+       
+    }
+
+    &__julio li:hover {
+        background-color: $color-secundario;
+        transition: background-color, color .1s;
+        color:$color-terciario;
+        cursor:pointer;
+    }
+
+    &__firstDayJulio {
+        grid-column-start: 5;
+    }
+
+    &__dayName {
+        background-color: white;
+        font-weight: bold;
+    }
+
+}
