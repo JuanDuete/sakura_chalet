@@ -111,7 +111,6 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 10rem;
-    font-weight: bold;
     flex-wrap: wrap;
     margin-top: 5rem;
     background-image: url(../recursos/sakura__atadecer.jpeg);
@@ -193,23 +192,18 @@ h1 {
     padding: 1rem 2rem;
     border-radius: 1rem;
     text-align: center; }
-  .calendario__mayo {
+  .calendario__mayo, .calendario__junio, .calendario__julio {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 0; }
-  .calendario__mayo li:hover {
+  .calendario__mayo li:hover, .calendario__junio li:hover, .calendario__julio li:hover {
     background-color: black;
     transition: background-color, color .1s;
     color: white;
     cursor: pointer; }
   .calendario__firstDayMayo {
     grid-column-start: 7; }
-  .calendario__junio {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding: 0; }
   .calendario__junio li:hover {
     background-color: black;
     transition: background-color, color .1s;
@@ -217,11 +211,6 @@ h1 {
     cursor: pointer; }
   .calendario__firstDayJunio {
     grid-column-start: 3; }
-  .calendario__julio {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding: 0; }
   .calendario__julio li:hover {
     background-color: black;
     transition: background-color, color .1s;
