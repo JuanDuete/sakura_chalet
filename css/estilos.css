@@ -1,5 +1,5 @@
 footer {
-  background-color: #d3c2b1;
+  background-color: #d4c1b1;
   padding: 0.5rem;
   text-align: center;
   margin-top: auto; }
@@ -43,8 +43,11 @@ footer {
     font-size: 1rem;
     color: white; }
 
+.h1Fechas {
+  color: white; }
+
 .fechas {
-  background-image: url(../recursos/sakura__atadecer.jpeg);
+  background-image: url(../recursos/chalet_arriba.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -200px; }
@@ -61,39 +64,48 @@ footer {
   align-self: center;
   margin-top: 2rem; }
   .calendario__box {
-    background-color: #d3c2b1;
+    background-color: #d4c1b1;
     padding: 1rem 2rem;
     border-radius: 1rem;
     text-align: center; }
-  .calendario__mayo, .calendario__junio, .calendario__julio {
+  .calendario__junio, .calendario__julio, .calendario__agosto {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 0; }
-  .calendario__mayo li:hover, .calendario__junio li:hover, .calendario__julio li:hover {
-    background-color: black;
-    transition: background-color, color .1s;
-    color: white;
-    cursor: pointer; }
-  .calendario__firstDayMayo {
-    grid-column-start: 7; }
-  .calendario__junio li:hover {
-    background-color: black;
-    transition: background-color, color .1s;
-    color: white;
-    cursor: pointer; }
   .calendario__firstDayJunio {
     grid-column-start: 3; }
-  .calendario__julio li:hover {
-    background-color: black;
-    transition: background-color, color .1s;
-    color: white;
-    cursor: pointer; }
   .calendario__firstDayJulio {
     grid-column-start: 5; }
+  .calendario__firstDayAgosto {
+    grid-column-start: 1; }
   .calendario__dayName {
     background-color: white;
     font-weight: bold; }
+  .calendario__diaOcupado, .calendario__firstDayJulio {
+    background-color: black;
+    color: white; }
+
+.referencias {
+  display: flex;
+  justify-content: center;
+  background-color: white; }
+  .referencias__disp {
+    background-color: #d4c1b1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+  .referencias__ocup {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+  .referencias__ocup article {
+    color: white; }
 
 .portada {
   font-family: "Anton", sans-serif;
@@ -110,7 +122,7 @@ footer {
     text-decoration: none;
     font-family: "Anton", sans-serif;
     font-size: 3rem;
-    background-color: #d3c2b1;
+    background-color: #d4c1b1;
     color: white;
     padding: 1rem;
     margin: 2rem;
@@ -151,7 +163,10 @@ header {
   grid-area: header; }
 
 .bg-brown {
-  background-color: #d3c2b1; }
+  background-color: #d4c1b1; }
+
+.navbar-brand {
+  padding: 0; }
 
 .link-nav {
   color: white;
@@ -167,7 +182,6 @@ header {
   margin-bottom: 3rem; }
 
 main {
-  grid-area: main;
   display: flex;
   flex-direction: column; }
 
@@ -189,7 +203,7 @@ h1 {
     flex-direction: column;
     justify-content: flex-end;
     padding: .5rem;
-    background-color: #d3c2b1;
+    background-color: #d4c1b1;
     max-width: 40rem;
     color: white;
     border: none;
@@ -347,24 +361,16 @@ iframe {
   cursor: pointer;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
 
-@media (min-width: 320px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 800px) {
   body {
     margin: 16px; }
   .portada h1 {
     font-size: 3rem; }
   .portada__btn {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    font-family: "Anton", sans-serif;
     font-size: 1rem;
-    background-color: #d3c2b1;
-    color: white;
     padding: 1rem;
     margin: 1rem;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+    border-radius: 1rem; }
   .h1Fechas {
     color: white; }
   .pictureC {

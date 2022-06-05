@@ -1,5 +1,9 @@
+.h1Fechas {
+    color: $color-terciario;
+}
+
 .fechas {
-    background-image: url(../recursos/sakura__atadecer.jpeg);
+    background-image: url(../recursos/chalet_arriba.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y:-200px ;
@@ -25,34 +29,11 @@
         text-align: center;
     }
     
-    &__mayo {
+    &__junio {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         padding: 0;
-    }
-
-    &__mayo li:hover {
-        background-color: $color-secundario;
-        transition: background-color, color .1s;
-        color:$color-terciario;
-        cursor:pointer;
-    }
-
-    &__firstDayMayo {
-        grid-column-start: 7;
-    }
-
-    &__junio {
-        @extend .calendario__mayo;
-        
-    }
-
-    &__junio li:hover {
-        background-color: $color-secundario;
-        transition: background-color, color .1s;
-        color:$color-terciario;
-        cursor:pointer;
     }
 
     &__firstDayJunio {
@@ -60,19 +41,20 @@
     }
 
     &__julio {
-        @extend .calendario__mayo;
-       
+        @extend .calendario__junio;
     }
-
-    &__julio li:hover {
-        background-color: $color-secundario;
-        transition: background-color, color .1s;
-        color:$color-terciario;
-        cursor:pointer;
-    }
-
+    
     &__firstDayJulio {
         grid-column-start: 5;
+        @extend .calendario__diaOcupado;
+    }
+
+    &__agosto {
+        @extend .calendario__junio;
+    }
+
+    &__firstDayAgosto {
+        grid-column-start: 1;
     }
 
     &__dayName {
@@ -80,4 +62,40 @@
         font-weight: bold;
     }
 
+    &__diaOcupado {
+        background-color: $color-secundario;
+        color: $color-terciario;
+    }
+}
+
+
+.referencias {
+    display: flex;
+    justify-content: center;
+    background-color: $color-terciario;
+    
+    &__disp {
+        background-color: $color-principal;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        
+        box-shadow: $box_sombra
+    
+    }
+    
+    &__ocup {
+        background-color: $color-secundario;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: $box_sombra
+    
+    }
+    
+    &__ocup article {
+        color: $color-terciario;
+    }
 }

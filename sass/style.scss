@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'nav';
 @import 'footer';
 @import 'fechas';
 @import 'portada';
@@ -27,6 +26,10 @@ header {
     background-color: $color-principal;
 }
 
+.navbar-brand {
+    padding: 0;
+}
+
 .link-nav {
     color: white;
     text-decoration: none;
@@ -45,7 +48,6 @@ header {
     margin-bottom: 3rem;
 }
 main {
-    grid-area: main;
     display: flex;
     flex-direction: column;
 }
@@ -103,8 +105,8 @@ h1 {
         display: flex;
         justify-content: center;
         text-decoration: none;
-        background-color: black;
-        color: white;
+        background-color: $color-secundario;
+        color: $color-terciario;
         padding: 1rem;
         margin: 1rem 0;
         border: none;
@@ -172,8 +174,6 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
     
     }
 }
-
-
 
 .info__ifr {
         display: flex;
@@ -274,7 +274,7 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
 }
 
 
-@media (min-width:320px) and (max-width:800px) {
+@media (min-width:300px) and (max-width:800px) {
     body {
         margin: 16px;
         
@@ -287,18 +287,11 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
         }
     
         &__btn {
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            font-family: $font-1;
             font-size: 1rem;
-            background-color: $color-principal;
-            color: $color-terciario;
             padding: 1rem;
             margin: 1rem;
-            border: none;
             border-radius: 1rem;
-            box-shadow: $box_sombra;
+            
         }
     
     }
