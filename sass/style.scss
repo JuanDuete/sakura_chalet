@@ -7,14 +7,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
 }
 
 .bg-brown {
@@ -33,23 +31,21 @@ body {
     text-decoration: none;
     margin-right: 2rem;
     text-transform: uppercase;
-
 }
     
 .link-nav:hover {
     color: black;
     transition: color 1s ;
-
 }
 
 .container {
     margin-bottom: 3rem;
 }
+
 main {
     display: flex;
     flex-direction: column;
 }
-
 
 h1 {
     display: flex;
@@ -58,8 +54,6 @@ h1 {
     text-transform: uppercase;
     margin-top: 3rem;
 }
-
-
 
 .masInfo {
     margin-top:5rem;
@@ -96,7 +90,6 @@ h1 {
     &__btn {
         display: flex;
         justify-content: center;
-        
     }
     
     a {
@@ -120,6 +113,10 @@ h1 {
 
 }
 
+.review {
+    font-size: 2rem;
+}
+
 .info{
  
     h2 {
@@ -131,7 +128,6 @@ h1 {
     &__foto {
         width: 20rem;
         height: 25rem;
-
     }
 
     &__container {
@@ -188,17 +184,17 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
 .pfrecuentes {
 
     &__h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    width: auto;
-    max-width: fit-content;
-    margin: 2rem;
-    border-radius: 1rem;
-    padding: 0.3rem;
-    border: solid 1px #ccc;
-    background-color: #d3c2b1;
-    box-shadow: $box_sombra;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        width: auto;
+        max-width: fit-content;
+        margin: 2rem;
+        border-radius: 1rem;
+        padding: 0.3rem;
+        border: solid 1px #ccc;
+        background-color: #d3c2b1;
+        box-shadow: $box_sombra;
     }
 
     &__article {
@@ -206,7 +202,6 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
         justify-content: flex-start;
         text-align: left;
         margin: 2rem;
-        
     }
 
 }
@@ -271,7 +266,6 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
     }
 }
 
-
 @media (min-width:300px) and (max-width:800px) {
     body {
         margin: 16px;
@@ -289,9 +283,7 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
             padding: 1rem;
             margin: 1rem;
             border-radius: 1rem;
-            
         }
-    
     }
 
     .h1Fechas {
@@ -309,6 +301,5 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
         width: 30rem;
         height: 20rem;
     } 
-
 }
 
