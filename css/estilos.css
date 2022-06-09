@@ -159,9 +159,6 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
-header {
-  grid-area: header; }
-
 .bg-brown {
   background-color: #d4c1b1; }
 
@@ -169,6 +166,9 @@ header {
   padding: 0; }
 
 .link-nav {
+  display: flex;
+  justify-content: center;
+  padding: .8rem;
   color: white;
   text-decoration: none;
   margin-right: 2rem;
@@ -252,7 +252,8 @@ h1 {
 .info__container p {
   display: flex;
   text-align: center;
-  width: 80rem; }
+  width: 80rem;
+  padding: 2rem; }
 
 .info__fotoContainer {
   display: flex;
@@ -314,12 +315,11 @@ iframe {
   margin: 2rem; }
 
 .backgroundCto {
-  background-image: url(../recursos/chalet_arriba.jpeg);
+  background-image: url(../recursos/Paisaje-de-Merlo-san-luis.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -12rem; }
   .backgroundCto h1 {
-    color: white;
     font-weight: bold;
     margin-top: 3rem; }
 

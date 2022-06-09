@@ -17,11 +17,6 @@ body {
     
 }
 
-header {
-    grid-area: header;
-    
-}
-
 .bg-brown {
     background-color: $color-principal;
 }
@@ -31,7 +26,10 @@ header {
 }
 
 .link-nav {
-    color: white;
+    display:flex;
+    justify-content: center;
+    padding: .8rem;
+    color: $color-terciario;
     text-decoration: none;
     margin-right: 2rem;
     text-transform: uppercase;
@@ -146,6 +144,7 @@ h1 {
         display: flex;
         text-align: center;
         width: 80rem;
+        padding: 2rem;
     }
 
     &__fotoContainer {
@@ -213,13 +212,12 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
 }
 
 .backgroundCto {
-    background-image: url(../recursos/chalet_arriba.jpeg);
+    background-image: url(../recursos/Paisaje-de-Merlo-san-luis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y:-12rem;
 
     h1 {
-        color: $color-terciario;
         font-weight: bold;
         margin-top: 3rem;
     }
