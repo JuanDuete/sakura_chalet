@@ -2,6 +2,7 @@
     font-family: $font-1;
     background: $color-terciario;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 
@@ -26,26 +27,22 @@
     }
 
     h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 12rem;
-    flex-wrap: wrap;
-    margin-top: 5rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9rem;
+        flex-wrap: wrap;
+        margin-top: 5rem;
 
-    color: transparent;
-    background-image: url(../recursos/sakura__atadecer.jpeg);
+        color: transparent;
+        background-image: url(../recursos/sakura__atadecer.jpeg);
         
-    background-size: cover;
+        background-size: cover;
         
          
-        
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-     
-        
-     }
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
      &__btn:hover {
         background-color: $color-secundario;

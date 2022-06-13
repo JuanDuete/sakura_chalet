@@ -163,12 +163,26 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
     .#{$key}-picture {
         background-image: url('../recursos/fotosS/#{$sakura}.jpeg');
         background-size: cover;
-        width: 20rem;
+        width: 18rem;
         height: 30rem;
         background-color: $color-secundario;
     
     }
 }
+
+$fotos: (key4: living, key5: dormitorio, key6: fuego);
+
+@each $key, $sakura in $fotos{
+    .#{$key}-picture {
+        background-image: url('../recursos/fotosS/#{$sakura}.jpeg');
+        background-size: cover;
+        width: 18rem;
+        height: 30rem;
+        background-color: $color-secundario;
+    
+    }
+}
+
 
 .info__ifr {
         display: flex;
@@ -266,12 +280,12 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
     }
 }
 
-@media (min-width:300px) and (max-width:800px) {
+@media (min-width: 320px) and (max-width: 720px) {
     body {
         margin: 16px;
         
     }
-
+    
     .portada {
     
         h1 {
@@ -286,20 +300,17 @@ $fotos: (key1: balcon, key2: pileta, key3: terraza);
         }
     }
 
-    .h1Fechas {
-        color: $color-terciario;
-    }
-    
     .pictureC {
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        align-items: center;
+        
     }   
 
     iframe {
-        width: 30rem;
-        height: 20rem;
+        width: 18rem;
+        height: 15rem;
     } 
+
 }
 

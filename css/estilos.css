@@ -11,7 +11,7 @@ footer {
   font-size: 1.5rem; }
 
 .newsletter__input {
-  width: 18%;
+  width: 200px;
   margin: 0.2rem;
   padding: 0.2rem;
   border: 1px solid #ccc;
@@ -43,29 +43,26 @@ footer {
     font-size: 1rem;
     color: white; }
 
-.h1Fechas {
-  color: white; }
-
 .fechas {
-  background-image: url(../recursos/chalet_arriba.jpeg);
+  background-image: url(../recursos/sakura_el_filo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -200px; }
 
 .calendario {
-  width: 90%;
-  margin: auto;
-  max-width: 80rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  max-width: 80rem;
   padding: 2rem;
   align-self: center;
   margin-top: 2rem; }
   .calendario__box {
     background-color: #d4c1b1;
-    padding: 1rem 2rem;
+    padding: 2rem;
     border-radius: 1rem;
     text-align: center; }
   .calendario__junio, .calendario__julio, .calendario__agosto {
@@ -88,8 +85,7 @@ footer {
 
 .referencias {
   display: flex;
-  justify-content: center;
-  background-color: white; }
+  justify-content: center; }
   .referencias__disp {
     background-color: #d4c1b1;
     display: flex;
@@ -111,6 +107,7 @@ footer {
   font-family: "Anton", sans-serif;
   background: white;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center; }
   .portada__boxbtn {
@@ -132,7 +129,7 @@ footer {
   .portada h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 12rem;
+    font-size: 9rem;
     flex-wrap: wrap;
     margin-top: 5rem;
     color: transparent;
@@ -270,21 +267,42 @@ h1 {
 .key1-picture {
   background-image: url("../recursos/fotosS/balcon.jpeg");
   background-size: cover;
-  width: 20rem;
+  width: 18rem;
   height: 30rem;
   background-color: black; }
 
 .key2-picture {
   background-image: url("../recursos/fotosS/pileta.jpeg");
   background-size: cover;
-  width: 20rem;
+  width: 18rem;
   height: 30rem;
   background-color: black; }
 
 .key3-picture {
   background-image: url("../recursos/fotosS/terraza.jpeg");
   background-size: cover;
-  width: 20rem;
+  width: 18rem;
+  height: 30rem;
+  background-color: black; }
+
+.key4-picture {
+  background-image: url("../recursos/fotosS/living.jpeg");
+  background-size: cover;
+  width: 18rem;
+  height: 30rem;
+  background-color: black; }
+
+.key5-picture {
+  background-image: url("../recursos/fotosS/dormitorio.jpeg");
+  background-size: cover;
+  width: 18rem;
+  height: 30rem;
+  background-color: black; }
+
+.key6-picture {
+  background-image: url("../recursos/fotosS/fuego.jpeg");
+  background-size: cover;
+  width: 18rem;
   height: 30rem;
   background-color: black; }
 
@@ -363,7 +381,7 @@ iframe {
   cursor: pointer;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
 
-@media (min-width: 300px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 720px) {
   body {
     margin: 16px; }
   .portada h1 {
@@ -373,13 +391,10 @@ iframe {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem; }
-  .h1Fechas {
-    color: white; }
   .pictureC {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-    margin-right: 2rem; }
+    align-items: center; }
   iframe {
-    width: 30rem;
-    height: 20rem; } }
+    width: 18rem;
+    height: 15rem; } }
