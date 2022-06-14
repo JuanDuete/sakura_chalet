@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   background-color: #d4c1b1;
   padding: 0.5rem;
@@ -155,6 +156,18 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3rem; }
+
+main {
+  display: flex;
+  flex-direction: column; }
+
+/*navegación con bootstrap*/
 .bg-brown {
   background-color: #d4c1b1; }
 
@@ -174,20 +187,7 @@ body {
   color: black;
   transition: color 1s; }
 
-.container {
-  margin-bottom: 3rem; }
-
-main {
-  display: flex;
-  flex-direction: column; }
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 3rem; }
-
+/*navegación con bootstrap*/
 .masInfo {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -231,6 +231,9 @@ h1 {
   .masInfo__box a:hover {
     transform: scale(1.2);
     transition: transform 1.1s; }
+
+.container {
+  margin-bottom: 3rem; }
 
 .review {
   font-size: 2rem; }
